@@ -1,0 +1,60 @@
+header {
+    background: #CCCCCC;
+    padding: 20px 0;
+    
+}
+.box{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+.logo {
+    display: inline-block;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #ff8c00;
+}
+.body {
+    width: 940px;
+    margin: 0 auto;
+}
+.body li {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    margin: 1.5%;
+    text-align: center;
+    border-radius: 10px;
+}
+.body li:hover {
+    border-color: #ff8c00;
+}
+.body li h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
