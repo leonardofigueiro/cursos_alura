@@ -1,11 +1,24 @@
 @import url("header.css");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;700&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&family=Roboto:wght@100&display=swap');
 @import url('banner.css');
+@import url('carrossel.css');
+@import url('topicos.css');
+@import url('contato.css');
+@import url('rodape.css');
+
 :root {
     --cor-de-fundo: #EBECEE;
     --branco: #FFFFFF;
     --cor-titulo-menu: #EB9B00;
+    --laranja: #EB9B00;
     --fonte-principal: 'Poppins';
+    --fonte-josefin: 'Josefin Sans';
+    --azul: #002F52;
+    --preto-85op: color: rgba(0, 0, 0, 0.85);
+    --preto: #000000;
+    
+
 
 
 }
