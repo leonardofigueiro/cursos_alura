@@ -35,3 +35,36 @@
     padding-left: 2.5em;
     color: var(--azul);
 }
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+    }
+    .contato__email {
+        width: 30%;
+    }
+    .contato__descricao {
+        margin-right: 1em;
+        width: 30%;
+    }
+    .contato__titulo {
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+@media screen and (min-width: 1728px) {
+
+    .contato__email {
+        width: 20%;
+    }
+    .contato__descricao {
+        margin-right: 1em;
+        width: 23%;
+    }
+    .contato__titulo {
+        font-size: 24px;
+    }
+}

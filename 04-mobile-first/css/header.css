@@ -23,9 +23,6 @@
 .container__imagem {
     padding: 1em;
 }
-.container__nome {
-    display: none;
-}
 
 .lista-menu {
     display: none;
@@ -40,8 +37,11 @@
     display: block;
 }
 
-.container__botao {
-    display: none;
+.container__botao:checked~.container__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url('../img/icons/Menu\ Aberto.svg');
+} 
+.container__botao:checked~.container__rotulo {
+    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
 }
 
 .lista-menu__titulo,
@@ -70,9 +70,11 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.opcoes {
+.opcoes, .container__texto, .container__botao, .container__nome {
     display: none;
 }
+
+
 
 
 @media screen and (min-width: 1024px) {
@@ -98,10 +100,8 @@
         text-decoration: none;
         color: var(--preto);
     }
-    .container__imagem--favoritos {
-        display: none;
-    }
-    .cabecalho__menu-hamburguer {
+
+    .cabecalho__menu-hamburguer, .opcoes__botao, .container__imagem--favoritos {
         display: none;
     }
     .opcoes__botao:checked~.lista-menu {
@@ -113,5 +113,40 @@
     .lista-menu {
         width: auto;
     }
-    
+    .opcoes__botao:checked~.opcoes__rotulo > .opcoes__item {
+        background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+        color: var(--branco);
+    } 
+    .opcoes__item {
+        padding: 1em;
+    }
+    .lista-menu__item:hover {
+        background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+        color: var(--branco);
+    }
+    .lista-menu__item:hover > .lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+
+}
+@media screen and (min-width: 1728px) {
+    .container__texto {
+        display: block;
+        font-size: 20px;
+        color: var(--azul);
+
+    }
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .cabecalho {
+        padding: 0 2em;
+    }
+    .opcoes {
+        margin-right: auto;
+    }
+
 }

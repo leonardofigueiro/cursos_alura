@@ -28,3 +28,32 @@
     font-weight: 700;
 
 }
+@media screen and (min-width: 1024px) {
+    .topicos {
+        padding: 24px 140px;
+    }
+    .topicos__titulo {
+        font-size: 24px;
+    }
+    .topicos__link {
+        font-size: 24px;
+    }
+    .topicos__item {
+        margin: 10em 12px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .topicos {
+        padding: 3em 30vw;
+    }
+    .topicos__titulo {
+        font-size: 32px;
+    }
+    .topicos__link {
+        font-size: 24px;
+    }
+    .topicos__item {
+        margin: 12px 12px;
+    }
+}
