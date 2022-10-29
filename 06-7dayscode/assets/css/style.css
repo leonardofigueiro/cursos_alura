@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&family=Roboto:wght@100&display=swap');
 @import url('header.css');
+@import url('banner.css');
+@import url('banner_two.css');
 
 :root {
     --fonte-principal: 'Inter';
@@ -8,12 +10,12 @@
     --red: #8E2424;
     --gray-logo: #3A404E;
     --branco: #FFFFFF;
-
-
 }
 
 body {
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
+    max-width: 1280px;
+    margin: auto;
 }

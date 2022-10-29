@@ -1,0 +1,27 @@
+.bannerii {
+display: flex;
+justify-content: space-around;
+padding: 20vh 0 20vh 0;
+
+}
+.bannerii__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+
+}
+
+.item__num {
+    color: var(--red);
+    font-size: 60px;
+    font-weight: 600;
+}
+.item__descricao {
+    color: var(--gray900);
+    font-weight: 500;
+    font-size: 18px;
+}
+.bannerii__paragrafo {
+    color: var(--gray500);
+    width: 15vw;
+}

@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 80vw;
     margin: auto;
     padding: 1em;
 }
@@ -21,7 +20,7 @@
 .header__menu {
     display: flex;
     gap: 2em;
-    margin-right: 20vw;
+    margin-right: 5%;
 }
 .header__menu-item {
     margin: 0 0.8em
