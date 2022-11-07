@@ -1,0 +1,27 @@
+.artigo {
+    max-width: 18rem;
+    min-width: 16rem;
+}
+.imagem-carrossel {
+    object-fit: cover;
+    object-position: 0 80%;
+    height: 70vh;
+}
+.fonte-titulo {
+    font-family: 'Pacifico', cursive;
+}
+.cor-titulo {
+    color: darkred!important;
+}
+.botao-vermelho {
+    background-color: darkred;
+    color: white;
+    
+}
+.borda-vermelha {
+    border-color: darkred;
+}
+.imagem-card {
+    object-fit: cover;
+    height: 200px;
+}
