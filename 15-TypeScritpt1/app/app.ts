@@ -1,5 +1,6 @@
 //importanto o controller, que pega as informações do input e manda para um construtor
 import { NegociacaoController } from "./controllers/negociacao-controller.js";
+import { NegociacoesView } from "./views/negociacoes-view.js";
 
 //a variável controller armazena o controller
 const controller = new NegociacaoController();
@@ -11,4 +12,4 @@ form.addEventListener("submit", (event) => {
     //aqui o método adiciona é chamado. Este método chama a função criarNegociação, que cria uma nova negociação
     //passando os atributos de formulário capturados pelo controller
     controller.adiciona()
-})
+});
