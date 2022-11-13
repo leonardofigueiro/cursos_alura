@@ -1,5 +1,6 @@
 import { Negociacao } from "../models/negociacao.js";
 import { Negociacoes } from "../models/negociacoes.js";
+import { mensagemView } from "../views/mensagem-view.js";
 import { NegociacoesView } from "../views/negociacoes-view.js";
 
 export class NegociacaoController {
@@ -12,6 +13,7 @@ export class NegociacaoController {
     //mandando o controller chamar a classe NegociacoesView, e passando a propriedade
     //#negociacoesView, que é o id da div criada no HTML
     private negociacoesView = new NegociacoesView('#negociacoesView')
+    private mensagemView = new mensagemView("#mensagemView")
 
     constructor() {
         this.inputData = document.querySelector("#data");
@@ -25,8 +27,9 @@ export class NegociacaoController {
         const negociacao = this.criaNegociacao();
         //quando o adiciona criar uma negociação, ele vai adicionar essa negociação à lista negociações
         this.negociacoes.adiciona(negociacao);
-        console.log(this.negociacoes.lista());
         this.negociacoesView.update(this.negociacoes)
+        this.mensagemView.update("A negociação foi cadastrada com sucesso!")
+
         //depois de criar a negociação, o formulário é limpo e o focus é transferido pra data
         this.limparFormulario();
     }

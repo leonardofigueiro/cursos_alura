@@ -1,12 +1,7 @@
 import { Negociacoes } from "../models/negociacoes.js";
-
-export class NegociacoesView {
-    private elemento: HTMLElement;
-    //aqui o construtor vai receber o atributo id da div onde vai ser renderizado
-    constructor(seletor: string) {
-        this.elemento = document.querySelector(seletor);
-    }
-
+import { View } from "./view.js";
+//a classe herda de View, mas Negociações
+export class NegociacoesView extends View<Negociacoes> {
     template(model: Negociacoes): string {
         return `
         <table class="table table-hover table-bordered">
@@ -31,9 +26,5 @@ export class NegociacoesView {
     </table>
         `
     }
-    update(model: Negociacoes): void {
-        const template = this.template(model);
-        console.log(template)
-        this.elemento.innerHTML = template;
-    }
+
 }
