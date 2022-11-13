@@ -8,14 +8,14 @@ export class Negociacoes {
 
 
     //criando o método que vai incluir a negociação na array
-    adiciona (negociacao: Negociacao) {
+    public adiciona(negociacao: Negociacao) {
         this.negociacoes.push(negociacao);
     }
     //criando o método que vai listar as negociações. 
     //este método vai retornar a lista negociações. A tipagem ReadonlyArray garante
     //que a lista só pode ser lida, e nunca alterada
     // lista():ReadonlyArray<Negociacao>{
-    lista(): readonly Negociacao[]{ //forma menos verbosa
+    public lista(): readonly Negociacao[] { //forma menos verbosa
         return this.negociacoes;
     }
 

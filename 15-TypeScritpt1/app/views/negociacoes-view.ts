@@ -2,7 +2,7 @@ import { Negociacoes } from "../models/negociacoes.js";
 import { View } from "./view.js";
 //a classe herda de View, mas Negociações
 export class NegociacoesView extends View<Negociacoes> {
-    template(model: Negociacoes): string {
+    protected template(model: Negociacoes): string {
         return `
         <table class="table table-hover table-bordered">
         <thead>
@@ -14,17 +14,20 @@ export class NegociacoesView extends View<Negociacoes> {
         </thead>
         <tbody>
             ${model.lista().map(negociacao => {
-                return `
+            return `
                 <tr>
-                    <td>${new Intl.DateTimeFormat().format(negociacao.data)}</td>
+                    <td>${this.formatar(negociacao.data)}</td>
                     <td>${negociacao.quantidade}</td>
                     <td>${negociacao.valor}</td>
                 </tr>
                 `
-            }).join('')}
+        }).join('')}
         </tbody>
     </table>
         `
+    }
+    private formatar(data: Date): String {
+        return new Intl.DateTimeFormat().format(data);
     }
 
 }
